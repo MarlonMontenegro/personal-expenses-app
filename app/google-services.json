@@ -33,7 +33,36 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628222606546:android:d5006dd5f3dcc7bfe2c10b",
+        "android_client_info": {
+          "package_name": "com.udb.personalexpensesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628222606546-to69q5124aidfkb1t90kqmo66uf9m921.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIzCaGoM7R5_5SSeOZRhm4wMYnqNEHFxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628222606546-to69q5124aidfkb1t90kqmo66uf9m921.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"
-} 
+}
