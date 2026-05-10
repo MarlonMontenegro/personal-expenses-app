@@ -22,44 +22,52 @@
         android:layout_height="wrap_content"
         android:text="Registra tus gastos personales"
         android:textSize="16sp"
-        android:textColor="#616161"
+        android:textColor="#424242"
         android:layout_marginBottom="32dp" />
 
     <EditText
         android:id="@+id/etExpenseName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2E7D32"
         android:hint="Nombre del gasto"
         android:inputType="text"
-        android:backgroundTint="#2E7D32"
-        android:layout_marginBottom="16dp" />
+        android:textColor="#212121"
+        android:textColorHint="#616161" />
 
     <EditText
         android:id="@+id/etExpenseAmount"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="59dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2E7D32"
         android:hint="Monto"
         android:inputType="numberDecimal"
-        android:backgroundTint="#2E7D32"
-        android:layout_marginBottom="16dp" />
+        android:textColor="#212121"
+        android:textColorHint="#616161" />
 
     <EditText
         android:id="@+id/etExpenseCategory"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2E7D32"
         android:hint="Categoría"
         android:inputType="text"
-        android:backgroundTint="#2E7D32"
-        android:layout_marginBottom="16dp" />
+        android:textColor="#212121"
+        android:textColorHint="#616161" />
 
     <EditText
         android:id="@+id/etExpenseDate"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#2E7D32"
         android:hint="Fecha, ejemplo: 09/05/2026"
         android:inputType="date"
-        android:backgroundTint="#2E7D32"
-        android:layout_marginBottom="24dp" />
+        android:textColor="#212121"
+        android:textColorHint="#616161" />
 
     <Button
         android:id="@+id/btnSaveExpense"
