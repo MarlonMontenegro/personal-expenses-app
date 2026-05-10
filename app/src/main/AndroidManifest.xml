@@ -11,16 +11,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PersonalExpensesApp">
+
         <activity
-            android:name=".MainActivity"
+            android:name=".views.HistoryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".views.AddExpenseActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".views.DashboardActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".views.RegisterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".views.LoginActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        
+
     </application>
 
 </manifest>

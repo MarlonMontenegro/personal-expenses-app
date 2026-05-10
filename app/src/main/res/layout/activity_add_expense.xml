@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="💵 Nuevo gasto"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#2E7D32"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registra tus gastos personales"
+        android:textSize="16sp"
+        android:textColor="#616161"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/etExpenseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del gasto"
+        android:inputType="text"
+        android:backgroundTint="#2E7D32"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etExpenseAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Monto"
+        android:inputType="numberDecimal"
+        android:backgroundTint="#2E7D32"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etExpenseCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Categoría"
+        android:inputType="text"
+        android:backgroundTint="#2E7D32"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etExpenseDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha, ejemplo: 09/05/2026"
+        android:inputType="date"
+        android:backgroundTint="#2E7D32"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnSaveExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar gasto"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2E7D32"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnBackDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1565C0" />
+
+</LinearLayout>
