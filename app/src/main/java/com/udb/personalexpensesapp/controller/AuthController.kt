@@ -2,6 +2,7 @@ package com.udb.personalexpensesapp.controller
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.auth.GoogleAuthProvider
 
 /**
  * Controlador encargado de gestionar
@@ -66,5 +67,24 @@ class AuthController {
      */
     fun isUserLoggedIn(): Boolean {
         return auth.currentUser != null
+    }
+
+    /**
+     * Inicia sesión con una cuenta de Google.
+     */
+    fun loginWithGoogle(
+        idToken: String,
+        onSuccess: (FirebaseUser?) -> Unit,
+        onError: (String) -> Unit
+    ) {
+        val credential = GoogleAuthProvider.getCredential(idToken, null)
+
+        auth.signInWithCredential(credential)
+            .addOnSuccessListener { result ->
+                onSuccess(result.user)
+            }
+            .addOnFailureListener { exception ->
+                onError(exception.message ?: "Error al iniciar sesión con Google")
+            }
     }
 }
